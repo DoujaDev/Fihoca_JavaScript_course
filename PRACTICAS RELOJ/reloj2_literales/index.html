@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        // promesas
+
+        var promesa1 = new Promise((primera,segunda) => {
+            setTimeout(()=>{
+                let numeroAleatorio = Math.random();
+
+                if (numeroAleatorio < 0.9){
+                    primera("PROMESA_1");
+                } else {
+                    segunda("error");
+                }
+            }, 4000);
+        });
+
+        var promesa2 = new Promise((primera,segunda) => {
+            setTimeout(()=>{
+                let numeroAleatorio = Math.random();
+
+                if (numeroAleatorio < 0.9){
+                    primera("PROMESA_2");
+                } else {
+                    segunda("error");
+                }
+            }, 4000);
+        });
+
+        var promesa3 = new Promise((primera,segunda) => {
+            setTimeout(()=>{
+                let numeroAleatorio = Math.random();
+
+                if (numeroAleatorio < 0.9){
+                    primera("PROMESA_3");
+                } else {
+                    segunda("error");
+                }
+            }, 4000);
+        });
+
+        // Vamos a enterarnos de cuándo se cumplen promesa1, promesa2, promesa3
+
+        Promise.all([promesa1, promesa2, promesa3]).then(data => {
+            console.log(data);
+        });
+
+        
+
+    </script>
+
+
+
+</head>
+
+<body>
+    
+</body>
+</html>

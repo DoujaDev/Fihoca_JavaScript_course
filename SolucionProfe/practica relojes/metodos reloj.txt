@@ -1,0 +1,8 @@
+start: Pone en marcha el reloj
+pause: pausa el reloj
+resume: continua (pero no empieza)
+stop: lo pone a cero y lo para
+invert: cambia el sentido. Si llega a 0 stop
+
+
+

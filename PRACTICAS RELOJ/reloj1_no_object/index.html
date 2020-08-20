@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>reloj1</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Reloj - Practica 1</h1>
+        
+        <script>
+
+            var totalSeconds = 0;
+            var horas = 0;
+            var minutos = 0;
+            var segundos = 0;
+
+            var interval_ID = setInterval(function(){
+                horas =     ("0" +  Math.floor(totalSeconds / 3600)).slice(-2);
+                minutos =   ("0" +  Math.floor(totalSeconds / 60 % 60)).slice(-2);
+                segundos =  ("0" +  Math.floor(totalSeconds % 60)).slice(-2);
+                console.log(horas + ":" + minutos + ":" + segundos);
+                totalSeconds++;
+            }, 1000);
+
+            console.log("interval_ID: " + interval_ID);
+            console.log("Para 'matar' el reloj ----> clearInterval(" + interval_ID + ");");
+
+        </script>
+  </body>
+</html>

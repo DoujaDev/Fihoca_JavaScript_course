@@ -1,0 +1,18 @@
+// Crear una función en javascript que devuelva el nombre de un número en castellano
+
+function numberConverter(numero){
+
+   // TODO devuelve el nombre de números entre [0...999] 
+   // Si lo considerais aburrido, podeis ampliar a números entre [0...999999999999]
+
+   return "";
+
+}
+
+// Probamos..
+
+console.log(numberConverter(100));
+console.log(numberConverter(17));
+console.log(numberConverter(107));
+console.log(numberConverter(642));
+console.log(numberConverter(8));
